@@ -1,6 +1,7 @@
 import "./App.css";
 import styled from "styled-components";
 import { MarkedInput } from "./components/markInput";
+import { Result } from "./components/result";
 
 const Container = styled.div`
   outline: 1px solid red;
@@ -22,6 +23,7 @@ const EditorContainer = styled.div`
   outline: 1px solid blue;
   height: 100%;
   width: 100%;
+  display: flex;
 `;
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
       </Title>
       <EditorContainer>
         <MarkedInput />
+        <Result />
       </EditorContainer>
     </Container>
   );

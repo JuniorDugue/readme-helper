@@ -3,7 +3,7 @@
   [ReadME Helper App](https://readme-helper.vercel.app/)
 
 - Packages used
-  [React Markdown](https://www.npmjs.com/package/react-markdown)
+  [React Markdown](https://www.npmjs.com/package/react-markdown) &
   [Styled Components](https://www.npmjs.com/package/styled-components)
 
 ---

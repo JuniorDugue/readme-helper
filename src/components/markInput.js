@@ -13,6 +13,9 @@ const Title = styled.div`
   font-weight: 700;
   font-family: "Lato", sans-serif;
   margin-bottom: 1em;
+  /* text-decoration-line: underline; */
+  border-bottom: 1px solid black;
+  padding: 8px 0;
 `;
 
 const TextArea = styled.textarea`
@@ -28,7 +31,7 @@ export function MarkedInput(props) {
   return (
     <Container>
       <Title>Markdown Text</Title>
-      <TextArea/>
+      <TextArea />
     </Container>
   );
 }
