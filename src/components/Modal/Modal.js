@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import CheatSheet from "./CheatSheet";
 
@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5vh;
+  height: 35vh;
   padding-bottom: 4rem;
 `;
 

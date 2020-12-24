@@ -4,6 +4,8 @@ import { MarkedInput } from "./components/markInput";
 import { Result } from "./components/result";
 import EditorContext from "./components/context/editorContext";
 import Modal from "./components/Modal/Modal";
+import { GlobalStyle } from "./components/globalStyles";
+import { useSpring, animated } from "react-spring";
 
 const Container = styled.div`
   width: 100%;
@@ -34,12 +36,23 @@ function App() {
     setMarkdownText,
   };
 
+  const animation = useSpring({
+    config: {
+      duration: 150,
+    },
+    translateX: 0,
+    from: { translateX: -200 },
+  });
+
   return (
     <EditorContext.Provider value={contextValue}>
+      <GlobalStyle />
       <Container>
-        <Title>
-          <h1>ReadME Helper</h1>
-        </Title>
+        <animated.div style={animation}>
+          <Title>
+            <h1>ReadME Helper</h1>
+          </Title>
+        </animated.div>
         <Modal />
         <EditorContainer>
           <MarkedInput />
