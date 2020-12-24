@@ -1,5 +1,6 @@
 import "./App.css";
 import styled from "styled-components";
+import { MarkedInput } from "./components/markInput";
 
 const Container = styled.div`
   outline: 1px solid red;
@@ -21,7 +22,7 @@ const EditorContainer = styled.div`
   outline: 1px solid blue;
   height: 100%;
   width: 100%;
-`
+`;
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         <h1>ReadME Helper</h1>
       </Title>
       <EditorContainer>
-
+        <MarkedInput />
       </EditorContainer>
     </Container>
   );

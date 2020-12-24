@@ -1,3 +1,13 @@
+## _Features & Tech Stack_
+- Check out the app
+  [ReadME Helper App](https://readme-helper.vercel.app/)
+
+- Packages used
+  [React Markdown](https://www.npmjs.com/package/react-markdown)
+  [Styled Components](https://www.npmjs.com/package/styled-components)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
