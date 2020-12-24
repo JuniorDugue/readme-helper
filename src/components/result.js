@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import ReactMarkdown from "react-markdown";
+import { useContext } from "react";
+import editorContext from "./context/editorContext";
 
 const Container = styled.div`
   width: 50%;
@@ -14,7 +16,6 @@ const Title = styled.div`
   font-weight: 700;
   font-family: "Lato", sans-serif;
   margin-bottom: 1em;
-  /* text-decoration-line: underline; */
   border-bottom: 1px solid black;
   padding: 8px 0;
 `;
@@ -26,11 +27,13 @@ const ResultArea = styled.div`
 `;
 
 export function Result(props) {
+  const {markdownText} = useContext(editorContext);
+
   return (
     <Container>
       <Title>Display Area</Title>
       <ResultArea>
-        <ReactMarkdown source="yessir" />
+        <ReactMarkdown source={markdownText} />
       </ResultArea>
     </Container>
   );

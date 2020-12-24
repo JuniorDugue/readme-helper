@@ -1,10 +1,10 @@
-import "./App.css";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { MarkedInput } from "./components/markInput";
 import { Result } from "./components/result";
+import EditorContext from "./components/context/editorContext";
 
 const Container = styled.div`
-  outline: 1px solid red;
   width: 100%;
   height: 100%;
   display: flex;
@@ -20,23 +20,31 @@ const Title = styled.div`
 `;
 
 const EditorContainer = styled.div`
-  outline: 1px solid blue;
   height: 100%;
   width: 100%;
   display: flex;
 `;
 
 function App() {
+  const [markdownText, setMarkdownText] = useState("");
+
+  const contextValue = {
+    markdownText,
+    setMarkdownText,
+  };
+
   return (
-    <Container>
-      <Title>
-        <h1>ReadME Helper</h1>
-      </Title>
-      <EditorContainer>
-        <MarkedInput />
-        <Result />
-      </EditorContainer>
-    </Container>
+    <EditorContext.Provider value={contextValue}>
+      <Container>
+        <Title>
+          <h1>ReadME Helper</h1>
+        </Title>
+        <EditorContainer>
+          <MarkedInput />
+          <Result />
+        </EditorContainer>
+      </Container>
+    </EditorContext.Provider>
   );
 }
 

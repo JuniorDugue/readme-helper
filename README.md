@@ -1,10 +1,13 @@
 ## _Features & Tech Stack_
-- Check out the app
-  [ReadME Helper App](https://readme-helper.vercel.app/)
 
-- Packages used
+- Try out the app
+  [ReadME Helper](https://readme-helper.vercel.app/)
+
+- Libraries used
   [React Markdown](https://www.npmjs.com/package/react-markdown) &
   [Styled Components](https://www.npmjs.com/package/styled-components)
+  [React Hooks](https://reactjs.org/docs/context.html)
+  - Context API
 
 ---
 
