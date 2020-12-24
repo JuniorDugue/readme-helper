@@ -37,7 +37,7 @@ export function MarkedInput(props) {
   };
   return (
     <Container>
-      <Title>Markdown Text</Title>
+      <Title>Markdown Text (start typing below)</Title>
       <TextArea onChange={onInputChange} />
     </Container>
   );

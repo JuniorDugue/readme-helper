@@ -28,23 +28,24 @@ const ModalWrapper = styled.div`
   border-radius: 10px;
 `;
 
-const ModalImg = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 10px 0 0 10px;
-  background: #000;
-`;
+// const ModalImg = styled.img`
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 10px 0 0 10px;
+//   background: #000;
+// `;
 
 const ModalContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 1.8;
+  line-height: 1.2;
   color: #141414;
 
   p {
     margin-bottom: 1rem;
+    font-size: 1rem;
   }
 
   button {
@@ -106,7 +107,18 @@ function CheatSheet({ showModal, setShowModal }) {
               {/* <ModalImg src={require("./macbook.jpg")} alt="keyboard of a macbook laptop" /> */}
               {/* <ModalImg src={image} alt="keyboard of a macbook laptop" /> */}
               <ModalContent>
-                <h2>ReadMe Cheatsheet</h2>
+                <h2>Here's a few to get started</h2>
+                <div>
+                  <p># H1</p>
+                  <p>## H2</p>
+                  <p>### H3</p>
+                  <p>### Bold</p>
+                  <p>**bold text**</p>
+                  <p>_Italic</p>
+                  <p>[title](https://www.example.com) for links</p>
+                  <p>for images ![alt text](image.jpg)</p>
+                  <button>click here more</button>
+                </div>
                 <ClosedModalButton aria-label="Close modal" onClick={() => setShowModal((prev) => !prev)} />
               </ModalContent>
             </ModalWrapper>

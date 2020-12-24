@@ -115,7 +115,7 @@ term
   [React Spring](https://www.npmjs.com/package/react-spring),
   [React Icons](https://github.com/react-icons/react-icons#readme), &
   [React Hooks](https://reactjs.org/docs/context.html)
-  - Context API
+  - Context API, useState, useRef, useCallBack, & useEffect
 
 ---
 
