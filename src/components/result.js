@@ -27,7 +27,7 @@ const ResultArea = styled.div`
 `;
 
 export function Result(props) {
-  const {markdownText} = useContext(editorContext);
+  const { markdownText } = useContext(editorContext);
 
   return (
     <Container>

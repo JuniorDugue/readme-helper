@@ -3,6 +3,112 @@
 - Try out the app
   [ReadME Helper](https://readme-helper.vercel.app/)
 
+  - Click the arrow below to reveal some examples you can use
+
+<details><summary><strong>Cheat Sheet for the App</strong></summary>
+
+## Basic Syntax
+
+These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
+
+### Heading
+
+# H1
+
+## H2
+
+### H3
+
+### Bold
+
+**bold text**
+
+### Italic
+
+_italicized text_
+
+### Blockquote
+
+> blockquote
+
+### Ordered List
+
+1. First item
+2. Second item
+3. Third item
+
+### Unordered List
+
+- First item
+- Second item
+- Third item
+
+### Code
+
+`code`
+
+### Horizontal Rule
+
+---
+
+### Link
+
+[title](https://www.example.com)
+
+### Image
+
+![alt text](image.jpg)
+
+## Extended Syntax
+
+These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
+
+### Table
+
+| Syntax    | Description |
+| --------- | ----------- |
+| Header    | Title       |
+| Paragraph | Text        |
+
+### Fenced Code Block
+
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+### Footnote
+
+Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+
+### Heading ID
+
+### My Great Heading {#custom-id}
+
+### Definition List
+
+term
+: definition
+
+### Strikethrough
+
+~~The world is flat.~~
+
+### Task List
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+</details>
+
+---
+
 - Libraries used
   [React Markdown](https://www.npmjs.com/package/react-markdown) &
   [Styled Components](https://www.npmjs.com/package/styled-components)
