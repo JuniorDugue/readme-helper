@@ -11,7 +11,7 @@
 
 These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
 
-### Heading
+### Add # [space] then the following below e.g.
 
 # H1
 
@@ -25,33 +25,33 @@ These are the elements outlined in John Gruber’s original design document. All
 
 ### Italic
 
-_italicized text_
+_for the italicized text, add a underscore before & after the word/sentence_
 
-### Blockquote
+### Blockquote add > [space] then your content
 
 > blockquote
 
-### Ordered List
+### Ordered List add 1.[space] then your content, etc
 
 1. First item
 2. Second item
 3. Third item
 
-### Unordered List
+### Unordered List add -[space] then your content, etc
 
 - First item
 - Second item
 - Third item
 
-### Code
+### For the code block, wrap your content inside of the backtik `
 
 `code`
 
-### Horizontal Rule
+### For the Horizontal Rule include 3 of these -
 
 ---
 
-### Link
+### For Links use square brackets [] with the name of the site then the actual url of the site inside of the parenthesis (), no spaces between the square brackets and parenthesis.
 
 [title](https://www.example.com)
 
@@ -110,8 +110,10 @@ term
 ---
 
 - Libraries used
-  [React Markdown](https://www.npmjs.com/package/react-markdown) &
-  [Styled Components](https://www.npmjs.com/package/styled-components)
+  [React Markdown](https://www.npmjs.com/package/react-markdown),
+  [Styled Components](https://www.npmjs.com/package/styled-components),
+  [React Spring](https://www.npmjs.com/package/react-spring),
+  [React Icons](https://github.com/react-icons/react-icons#readme), &
   [React Hooks](https://reactjs.org/docs/context.html)
   - Context API
 

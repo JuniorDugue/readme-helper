@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { MarkedInput } from "./components/markInput";
 import { Result } from "./components/result";
 import EditorContext from "./components/context/editorContext";
+import Modal from "./components/Modal/Modal";
 
 const Container = styled.div`
   width: 100%;
@@ -39,6 +40,7 @@ function App() {
         <Title>
           <h1>ReadME Helper</h1>
         </Title>
+        <Modal />
         <EditorContainer>
           <MarkedInput />
           <Result />
