@@ -2,7 +2,7 @@
 
 - Try out the app
   [ReadME Helper](https://readme-helper.vercel.app/)
-
+![screen recording of using the app](/version1demo.gif)
   - Click the arrow below to reveal some examples you can use
 
 <details><summary><strong>Cheat Sheet for the App</strong></summary>
